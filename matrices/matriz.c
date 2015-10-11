@@ -2,20 +2,20 @@
 
 int main ()
 {
-	int matrizA[3][3];
-	int matrizB[3][3];
-	int matrizC[3][3];
+	float matrizA[3][3];
+	float matrizB[3][3];
+	float matrizC[3][3];
 	int contadorA;
 	int contadorB;
 	int contadorC;
-	int valor;
+	float valor;
 	printf("Escribe los valores de la primer matriz\n");
 	
 	for(contadorA = 0; contadorA < 3; contadorA++){
 		
 		for(contadorB = 0; contadorB < 3; contadorB++){
 			
-			scanf("%d", &valor);
+			scanf("%f", &valor);
 			matrizA[contadorA][contadorB] = valor;
 		}
 	}
@@ -26,7 +26,7 @@ int main ()
 
                 for(contadorB = 0; contadorB < 3; contadorB++){
 
-                        scanf("%d", &valor);
+                        scanf("%f", &valor);
                         matrizB[contadorA][contadorB] = valor;
                 }
         }
@@ -39,9 +39,9 @@ int main ()
                 for(contadorB = 0; contadorB < 3; contadorB++){
 
                       	 if(contadorB < 2)
-				 printf("%d, ", matrizA[contadorA][contadorB]);
+				 printf("%.2f, ", matrizA[contadorA][contadorB]);
 			 else
-				 printf("%d",matrizA[contadorA][contadorB]);
+				 printf("%.2f",matrizA[contadorA][contadorB]);
                 }
 	printf("]");
         }
@@ -54,9 +54,9 @@ int main ()
                 for(contadorB = 0; contadorB < 3; contadorB++){
 		       
    		       if(contadorB < 2)
-                      		 printf("%d, ", matrizB[contadorA][contadorB]);
+                      		 printf("%.2f, ", matrizB[contadorA][contadorB]);
 		       else
-			         printf("%d", matrizB[contadorA][contadorB]);
+			         printf("%.2f", matrizB[contadorA][contadorB]);
                 }
         printf("]");
         }
@@ -75,9 +75,9 @@ int main ()
 	printf("\n[");
 		for(contadorB = 0; contadorB < 3; contadorB++){
 			if(contadorB < 2)
-				printf("%d, ", matrizC[contadorA][contadorB]);
+				printf("%.2f, ", matrizC[contadorA][contadorB]);
 			else
-				printf("%d", matrizC[contadorA][contadorB]);
+				printf("%.2f", matrizC[contadorA][contadorB]);
 		}
 	printf("]");
 	}
