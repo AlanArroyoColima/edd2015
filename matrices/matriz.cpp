@@ -1,5 +1,5 @@
 #include <iostream>
-
+#include <iomanip>
 using namespace std;
 
 int main ()
@@ -41,9 +41,10 @@ int main ()
                 for(contadorB = 0; contadorB < 3; contadorB++){
 
                       	 if(contadorB < 2)
-				 cout<<setprecision(2)<<matrizA[contadorA][contadorB]<<", ";
+				
+				cout<<fixed<<setprecision(2)<<matrizA[contadorA][contadorB]<<", ";
 			 else
-				 cout<<setprecision(2)<matrizA[contadorA][contadorB];
+				 cout<<fixed<<setprecision(2)<<matrizA[contadorA][contadorB];
                 }
 	cout<<"]";
         }
@@ -56,9 +57,9 @@ int main ()
                 for(contadorB = 0; contadorB < 3; contadorB++){
 		       
    		       if(contadorB < 2)
-                      		 cout<<setprecision(2)<<matrizB[contadorA][contadorB]<<", ";
+                    		 cout<<fixed<<setprecision(2)<<matrizB[contadorA][contadorB]<<", ";
 		       else
-			         cout<<setprecision(2)<<matrizB[contadorA][contadorB];
+			         cout<<fixed<<setprecision(2)<<matrizB[contadorA][contadorB];
                 }
         cout<<"]";
         }
@@ -77,9 +78,9 @@ int main ()
 	cout<<"\n[";
 		for(contadorB = 0; contadorB < 3; contadorB++){
 			if(contadorB < 2)
-				cout<<setprecision(2)<<matrizC[contadorA][contadorB]<<", ";
+				cout<<fixed<<setprecision(2)<<matrizC[contadorA][contadorB]<<", ";
 			else
-				cout<<setprecision(2)<<matrizC[contadorA][contadorB];
+				cout<<fixed<<setprecision(2)<<matrizC[contadorA][contadorB];
 		}
 	cout<<"]";
 	}
