@@ -4,13 +4,13 @@ using namespace std;
 
 int main ()
 {
-	int matrizA[3][3];
-	int matrizB[3][3];
-	int matrizC[3][3];
+	float matrizA[3][3];
+	float matrizB[3][3];
+	float matrizC[3][3];
 	int contadorA;
 	int contadorB;
 	int contadorC;
-	int valor;
+	float valor;
 	cout<<"Escribe los valores de la primer matriz"<<endl;
 	
 	for(contadorA = 0; contadorA < 3; contadorA++){
@@ -41,9 +41,9 @@ int main ()
                 for(contadorB = 0; contadorB < 3; contadorB++){
 
                       	 if(contadorB < 2)
-				 cout<<matrizA[contadorA][contadorB]<<", ";
+				 cout<<setprecision(2)<<matrizA[contadorA][contadorB]<<", ";
 			 else
-				 cout<<matrizA[contadorA][contadorB];
+				 cout<<setprecision(2)<matrizA[contadorA][contadorB];
                 }
 	cout<<"]";
         }
@@ -56,9 +56,9 @@ int main ()
                 for(contadorB = 0; contadorB < 3; contadorB++){
 		       
    		       if(contadorB < 2)
-                      		 cout<<matrizB[contadorA][contadorB]<<", ";
+                      		 cout<<setprecision(2)<<matrizB[contadorA][contadorB]<<", ";
 		       else
-			         cout<<matrizB[contadorA][contadorB];
+			         cout<<setprecision(2)<<matrizB[contadorA][contadorB];
                 }
         cout<<"]";
         }
@@ -77,9 +77,9 @@ int main ()
 	cout<<"\n[";
 		for(contadorB = 0; contadorB < 3; contadorB++){
 			if(contadorB < 2)
-				cout<<matrizC[contadorA][contadorB]<<", ";
+				cout<<setprecision(2)<<matrizC[contadorA][contadorB]<<", ";
 			else
-				cout<<matrizC[contadorA][contadorB];
+				cout<<setprecision(2)<<matrizC[contadorA][contadorB];
 		}
 	cout<<"]";
 	}
