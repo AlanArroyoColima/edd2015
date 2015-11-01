@@ -15,4 +15,6 @@ void imprimir_lista(struct nodo *cabecera);
 
 void borrar_lista(struct nodo *cabecera);
 
+void eliminar_nodo(struct nodo *cabecera,int buscando);
+
 #endif

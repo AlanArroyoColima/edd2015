@@ -6,12 +6,14 @@ int main()
 	struct nodo lista;
 	int valor;
 	int valor_antes;
-	int contador = 1;
 
 	inicializar(&lista);
-	while(contador <= 10){
-		insertar_al_final(&lista,contador);
-		contador++;
+
+	printf("Escriba un numero, al escribir -1 se terminará la lista\n");
+	while(valor != -1){
+		scanf("%d", &valor);
+		if(valor != -1)
+		insertar_al_final(&lista,valor);
 	}
 	printf("Escriba un numero\n");
 	scanf("%d", &valor);
