@@ -18,6 +18,6 @@ int main ()
 	scanf("%d", &buscar);
 	eliminar_nodo(&lista,buscar);
 	imprimir_lista(&lista);
-
+	borrar_lista(&lista);
 	return 0;
 }

@@ -14,7 +14,7 @@ int main()
 	}
 
 	imprimir_lista(&lista);
-    borrar_lista(&lista);
+	borrar_lista(&lista);
 
 	return 0;
 }
