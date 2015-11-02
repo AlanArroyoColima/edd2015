@@ -6,6 +6,7 @@ int main ()
 	struct nodo lista;
 	int buscar;
 	int valor = 1;
+	inicializar(&lista);
 	while(valor < 10){
 		insertar_al_final(&lista,valor);
 		valor++;
@@ -17,6 +18,6 @@ int main ()
 	scanf("%d", &buscar);
 	eliminar_nodo(&lista,buscar);
 	imprimir_lista(&lista);
-
+	borrar_lista(&lista);
 	return 0;
 }

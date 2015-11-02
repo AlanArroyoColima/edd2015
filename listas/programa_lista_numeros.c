@@ -23,6 +23,6 @@ int main()
 	scanf("%d", &valor_antes);
 	insertar_despues_de(&lista, valor, valor_antes);
 	imprimir_lista(&lista);
-
+	borrar_lista(&lista);
 	return 0;
 }
